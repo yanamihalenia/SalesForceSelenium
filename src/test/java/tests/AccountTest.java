@@ -3,7 +3,6 @@ package tests;
 import objects.Account;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.LoginPage;
 
 import java.util.Random;
 
