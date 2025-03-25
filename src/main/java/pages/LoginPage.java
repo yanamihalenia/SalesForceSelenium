@@ -12,7 +12,7 @@ public class LoginPage extends BasePage {
     @FindBy(id = "password")
     public WebElement passwordInput;
 
-    @FindBy(id = "login")
+    @FindBy(id = "Login")
     public WebElement loginButton;
 
     public LoginPage(WebDriver driver) {
