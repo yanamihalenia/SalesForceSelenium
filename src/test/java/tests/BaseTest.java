@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pages.*;
 
@@ -51,5 +52,10 @@ public class BaseTest implements ITestConstants, IConstants {
         driver.manage().window().maximize();
         PageFactory.initElements(driver, this);
         initPages();
+    }
+
+    @AfterMethod
+    public void endTest() {
+        driver.quit();
     }
 }
