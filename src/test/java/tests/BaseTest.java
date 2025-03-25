@@ -11,7 +11,6 @@ import pages.*;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest implements ITestConstants, IConstants {
@@ -21,6 +20,9 @@ public class BaseTest implements ITestConstants, IConstants {
     HomePage homePage;
     LoginPage loginPage;
     NewAccountModalPage newAccountModalPage;
+    ContactPage contactPage;
+    ContactsListPage contactsListPage;
+    NewContactModalPage newContactModalPage;
 
     public void initPages(){
         accountPage = new AccountPage(driver);
@@ -28,6 +30,9 @@ public class BaseTest implements ITestConstants, IConstants {
         homePage = new HomePage(driver);
         loginPage = new LoginPage(driver);
         newAccountModalPage = new NewAccountModalPage(driver);
+        contactPage = new ContactPage(driver);
+        contactsListPage = new ContactsListPage(driver);
+        newContactModalPage = new NewContactModalPage(driver);
     }
 
     @BeforeMethod
