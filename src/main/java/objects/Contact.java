@@ -8,11 +8,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Account {
+public class Contact {
 
+    private String firstName;
+    private String lastName;
     private String accountName;
-    private String webSite;
-    private String type;
     private String description;
     private String phone;
 }
